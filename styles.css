@@ -2,5 +2,32 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgba(65, 56, 56, 0.5) ;
+    background-color:rgba(255,255, 255, 0.1) ;
+}
+h1{
+    color:rgb(255,255, 255);
+    text-align: center;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+.sector{
+    margin:auto auto;
+    background-color: #ffd;
+    text-align: center;
+    width: 40%;
+    border:2px solid gray;
+    height: 50vh;
+    border-radius: 10px;
+    padding-top: 40px;
+    display: block;
+    text-transform: uppercase;
+
+}
+.method{
+    color:rgb(0,0,255);
+
+}
+blockquote{
+    text-align: center;
 }

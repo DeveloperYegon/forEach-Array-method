@@ -28,3 +28,15 @@ letters.forEach(item=>{
     }
 });
 console.log(count);
+
+
+//forEach implementation
+let counting =0;
+const counter= document.getElementById("count");
+const btns= document.querySelectorAll("#btns");
+console.log(btns);
+console.log(counter);
+
+btns.forEach(function(item){
+console.log(item);
+});
