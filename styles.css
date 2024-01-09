@@ -1,0 +1,6 @@
+*, html{
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(65, 56, 56, 0.5) ;
+}
