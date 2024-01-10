@@ -33,10 +33,31 @@ console.log(count);
 //forEach implementation
 let counting =0;
 const counter= document.getElementById("count");
-const btns= document.querySelectorAll("#btns");
-console.log(btns);
-console.log(counter);
+const btns= document.querySelectorAll(".btn");
+//console.log(counter);
+//console.log(btns);
 
-btns.forEach(function(item){
-console.log(item);
+btns.forEach(btn=>{
+        btn.addEventListener("click", e =>{
+                const styles= e.currentTarget.classList;
+                if(styles.contains("decrease")){
+                        counting--;
+                }else if( styles.contains("increase")){
+                        counting ++;
+                }else{  
+                        counting=0;
+                }
+                if(counting>0){
+                        counter.style.color="rgb(0,255,0)";
+
+                }
+                if(counting < 0){
+                        counter.style.color="rgb(255,0,0)";
+                }
+                if(counting== 0){
+                        counter.style.color="#000"
+                }
+        counter.textContent=counting;
+        })
 });
+
